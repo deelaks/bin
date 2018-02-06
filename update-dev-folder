@@ -1,0 +1,23 @@
+#! /bin/bash
+
+source bash_colors
+
+clr_magenta echo \
+"########################
+Git pull rebase
+#########################"
+
+multigit.sh 'pull --rebase'
+
+clr_magenta echo \
+"########################
+Git remote prune
+#########################"
+multigit.sh 'remote prune origin'
+
+clr_magenta echo \
+"###########
+Git status
+###########"
+
+multigit.sh 'status --porcelain'
