@@ -9,9 +9,6 @@ MYDIR=$(cd "$MYDIR"/.. && pwd)
 
 export ME
 
-# Options get/set
-. "$(empkg-config -L)"
-
 #####################################################
 #
 # Function
